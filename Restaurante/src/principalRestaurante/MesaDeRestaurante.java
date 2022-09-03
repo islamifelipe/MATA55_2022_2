@@ -14,6 +14,7 @@ public class MesaDeRestaurante {
 	// o construtor padrão é aquele que não recebe argumentos
 	// Chama-se sobrescrita porque o novo construtor tem a mesma assinatura do construtor padrão
 	public MesaDeRestaurante() {
+		System.out.println("Chamando construtor padrão sobrescrito");
 		quantidadeDeItens = 6;
 		pedidos = new int[quantidadeDeItens]; // alocação
 		for (int i=0;i<quantidadeDeItens;i++) { // inicialização
@@ -24,6 +25,8 @@ public class MesaDeRestaurante {
 	// Sobrecarga de construtores. 
 	// Chama-se sobrecarga porque o método tem a mesma assinatura que o construtor padrão, exceto pelos parâmetros recebidos
 	public MesaDeRestaurante(int quantidadeDeItens) {
+		System.out.println("Chamando construtor com um parâmetro");
+		
 		this.quantidadeDeItens = quantidadeDeItens;
 		pedidos = new int[this.quantidadeDeItens];
 		//palavra-chave this
@@ -32,10 +35,10 @@ public class MesaDeRestaurante {
 		}
 	}
 	
-	// SOBRESCRITA do construtor padrão
-	// o construtor padrão é aquele que não recebe argumentos
-	// Chama-se sobrescrita porque o novo construtor tem a mesma assinatura do construtor padrão
+	// Sobrecarga de construtores. 
 	public MesaDeRestaurante(int quantidadeDeItens, int[] pedidos) {
+		System.out.println("Chamando construtor com dois parâmetros");
+		
 		this.quantidadeDeItens = quantidadeDeItens;
 		this.pedidos = new int[this.quantidadeDeItens];
 		for (int i=0;i<this.quantidadeDeItens;i++) {
@@ -88,4 +91,12 @@ public class MesaDeRestaurante {
 		// novamente a palavra-chave this
 	}
 	
+	//pre-condição: prescos.length = quantidadeDeItens
+	public float calculaValorMesa(float[] precos) {
+		float valor_mesa=0.0f;
+		for (int i=0; i<quantidadeDeItens; i++) {
+			valor_mesa += pedidos[i]*precos[i];
+		}
+		return valor_mesa;
+	}
 }

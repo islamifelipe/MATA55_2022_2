@@ -26,9 +26,17 @@ class SamSamXG {
 		ligada = false;
 	}
 
+	public SamSamXG(int volume_p) {
+		volume=volume_p;
+	}
+	
+	public SamSamXG() {
+		volume=100;
+	}
+	
 	public static void main(String[] args) {
 		SamSamXG tvDaSala = new SamSamXG();
-		SamSamXG tvDoQuarto = new SamSamXG();
+		SamSamXG tvDoQuarto = new SamSamXG(55);
 		tvDaSala.ligar();
 		tvDoQuarto.ligar();
 		tvDaSala.aumentarVolume();

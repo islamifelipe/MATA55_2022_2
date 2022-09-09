@@ -15,10 +15,10 @@ public class MesaDeRestaurante {
 	// Chama-se sobrescrita porque o novo construtor tem a mesma assinatura do construtor padrão
 	public MesaDeRestaurante() {
 		System.out.println("Chamando construtor padrão sobrescrito");
-		quantidadeDeItens = 6;
-		pedidos = new int[quantidadeDeItens]; // alocação
-		for (int i=0;i<quantidadeDeItens;i++) { // inicialização
-			pedidos[i] = 0;
+		this.quantidadeDeItens = 6;
+		this.pedidos = new int[this.quantidadeDeItens]; // alocação
+		for (int i=0;i<this.quantidadeDeItens;i++) { // inicialização
+			this.pedidos[i] = 0;
 		}
 	}
 	
@@ -47,13 +47,13 @@ public class MesaDeRestaurante {
 	}
 	
 	public void zeraPedido() {
-		for (int i=0; i<quantidadeDeItens; i++) {
+		for (int i=0; i<this.quantidadeDeItens; i++) {
 			this.pedidos[i]=0;
 		}
 	}
 	
 	public void adicionaPedidos(int indexPedido, int quantidadePedido) {
-		//o que acontece se indexPedido<0 ou indexPedido>quantidadeDeItens ?????
+		//o que acontece se indexPedido<0 ou indexPedido>this.quantidadeDeItens ?????
 		//vamos confiar no usuário ?
 		
 		pedidos[indexPedido] +=  quantidadePedido;
@@ -70,6 +70,7 @@ public class MesaDeRestaurante {
 	public int getPedido(int indexPedido) {
 		//novamente, vamos confiar que o usuário vai entrar com  0<=indexPedido<quantidadeDeItens;
 		return pedidos[indexPedido];
+		
 	}
 	
 	/* métodos getters:
@@ -91,10 +92,10 @@ public class MesaDeRestaurante {
 		// novamente a palavra-chave this
 	}
 	
-	//pre-condição: prescos.length = quantidadeDeItens
+	//pre-condição: prescos.length = this.quantidadeDeItens
 	public float calculaValorMesa(float[] precos) {
 		float valor_mesa=0.0f;
-		for (int i=0; i<quantidadeDeItens; i++) {
+		for (int i=0; i<this.quantidadeDeItens; i++) {
 			valor_mesa += pedidos[i]*precos[i];
 		}
 		return valor_mesa;

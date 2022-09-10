@@ -10,6 +10,10 @@ public class Lampada {
 		this.estado = estado;
 	}
 	
+	public Lampada(String estado) {
+		
+	}
+	
 	public void mostraEstado() {
 		if (this.estado == 0) {
 			System.out.println("Lâmpada desligada");

@@ -7,6 +7,7 @@ public class LituraIntermitente {
 		Scanner entrada = new Scanner(System.in);
 		int op = 1;
 		do {
+			System.out.println();
 			System.out.println("1 -- Continuar");
 			System.out.println("2 -- Sair");
 			System.out.print("Opcao: ");

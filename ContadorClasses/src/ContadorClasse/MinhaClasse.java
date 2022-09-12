@@ -2,6 +2,8 @@ package ContadorClasse;
 
 public class MinhaClasse {
 	private static int contador = 0;
+	// observe que, como contador é membro de classe, e não de objeto, 
+	// é totalmente possível inicializá-lo aqui
 	private int outroAtributo;
 	
 	public MinhaClasse(int outroAtributo) {

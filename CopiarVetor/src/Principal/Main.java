@@ -2,7 +2,7 @@ package Principal;
 
 /*Esta classe experimenta a explicação 
  * apresentada na aula de 05/09/2022 sobre 
- * cópia de vetores utilizando o operador de =
+ * cópia de vetores primitivos utilizando o operador de =
  * */
 
 public class Main {
@@ -35,8 +35,7 @@ public class Main {
 		printReferencia(vetor_estatico);
 		
 		System.out.println("Copiando o vetor estático com o operador =...");
-		int[] novo_vetor;
-		novo_vetor = vetor_estatico;
+		int[] novo_vetor = vetor_estatico;
 		printVetor(novo_vetor);
 		printReferencia(novo_vetor);
 		
@@ -66,6 +65,38 @@ public class Main {
 		printVetor(novo_vetor);
 
 
+		
+		
+		System.out.println("Ou melhor: -------------------------------------------");
+		int [] novo_vetor_dinamico = new int[quantidade];
+		
+
+		System.out.println("Copiando o vetor dinâmico com o operador =...");
+		novo_vetor_dinamico = vetor_dinamico;
+		
+		printVetor(vetor_dinamico);
+		printReferencia(vetor_dinamico);
+		printVetor(novo_vetor_dinamico);
+		printReferencia(novo_vetor_dinamico);
+		
+		
+		System.out.println("Cópia correta: -------------------------------------------");
+		
+		int [] novo_novo_vetor_dinamico = new int[quantidade];
+		for (int i=0; i<quantidade; i++) {
+			novo_novo_vetor_dinamico[i] = vetor_dinamico[i];
+		}
+		
+		printVetor(vetor_dinamico);
+		printReferencia(vetor_dinamico);
+		printVetor(novo_novo_vetor_dinamico);
+		printReferencia(novo_novo_vetor_dinamico);
+		System.out.println("Modificando a cópia correta: -------------------------------------------");
+		
+		novo_novo_vetor_dinamico[0] = 1093;
+		printVetor(vetor_dinamico);
+		printVetor(novo_novo_vetor_dinamico);
+		
 	}
 
 }

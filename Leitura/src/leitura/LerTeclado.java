@@ -6,7 +6,7 @@ import java.util.*; // importação da biblioteca util, onde se encontra a class
 public class LerTeclado {
 	public static void main(String[] args) {
 		// objeto de tipo Scanner (da biblioteca 
-		Scanner entrada = new Scanner(System.in);
+		Scanner entrada = new Scanner(System.in); // a entrada padrão
 		int a = entrada.nextInt();
 		int b = entrada.nextInt();
 		System.out.print(a+b);

@@ -1,6 +1,6 @@
 package pacote1;
 
-public class ClasseB {
+public class ClasseB{
 
 	public ClasseB() {
 		ClasseA aa = new ClasseA();

@@ -18,7 +18,7 @@ public class MinhaClasse {
 			
 	}
 
-	public static void zeraContador(int contador) {
+	public static void setContador(int contador) {
 		MinhaClasse.contador = contador;
 		//this.contador = contador; 
 		// Por que não pode usar o this no contexto estático?

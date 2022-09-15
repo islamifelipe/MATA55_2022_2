@@ -9,12 +9,16 @@ public class Calculadora {
 	 * 		==> NAO PODE DIFERIR APENAS NO RETORNO
 	*/
 	
+	
+	
+	
 	public double soma(double a, double b) {
 		return a+b;
 	}
 	public double soma(float a, float b) {
 		return a+b;
 	}
+	
 	
 	public double soma(float a, float b, float c) {
 		return a+b+c;

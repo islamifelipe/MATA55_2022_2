@@ -35,7 +35,8 @@ public class Main {
 		printReferencia(vetor_estatico);
 		
 		System.out.println("Copiando o vetor estático com o operador =...");
-		int[] novo_vetor = vetor_estatico;
+		int[] novo_vetor;
+		novo_vetor = vetor_estatico;
 		printVetor(novo_vetor);
 		printReferencia(novo_vetor);
 		

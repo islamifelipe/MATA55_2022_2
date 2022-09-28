@@ -7,9 +7,8 @@ public class Singleton {
 	}
 
 	public static Singleton getInstance() {
-		if (instancia == null)
+		if (instancia == null) 
 			instancia = new Singleton();
-
 		return instancia;
 	}
 }

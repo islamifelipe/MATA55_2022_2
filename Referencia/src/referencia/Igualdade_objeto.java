@@ -11,12 +11,12 @@ public class Igualdade_objeto {
 		MeuObjeto a2 = new MeuObjeto(1);
 		
 		System.out.println(a1 == a2);
-		//System.out.println(a1.equals(a2));
+		System.out.println(a1.equals(a2));
 		
 		
 		MeuObjeto a3 = a1;
 		System.out.println(a1 == a3);
-		//System.out.println(a1.equals(a3));
+		System.out.println(a1.equals(a3));
 		
 		
 		

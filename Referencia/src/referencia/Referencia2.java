@@ -10,10 +10,10 @@ public class Referencia2 {
 		modificavetor(a);
 		printVetor(a);
 		
-		int bb = 2;
-		System.out.println(bb);
-		modificaVariavel(bb);
-		System.out.println(bb);
+		int bbbbb = 2;
+		System.out.println(bbbbb);
+		modificaVariavel(bbbbb);
+		System.out.println(bbbbb);
 		
 		printVetor(a);
 		modificaVariavel(a[0]);

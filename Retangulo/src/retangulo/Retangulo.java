@@ -22,6 +22,7 @@ public class Retangulo {
 	public Retangulo(Retangulo r) {
 		this.largura = r.getLargura();
 		this.altura = r.getAltura();
+		
 	}
 	
 	public double area() {

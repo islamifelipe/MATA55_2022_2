@@ -9,6 +9,7 @@ public class SerieLimitada {
 	private SerieLimitada() {
 		serieLimitada = gerador.nextInt(99999);
 		SerieLimitada.contador++;
+		
 	}
 	
 	public static SerieLimitada getInstance() {

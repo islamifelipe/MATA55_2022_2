@@ -1,6 +1,7 @@
-package arrayList;
+package collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 
@@ -12,6 +13,7 @@ public class TesteArrayList {
 
 			//ArrayList arrayInteiros = new ArrayList();
 			ArrayList<Integer> arrayInteiros = new ArrayList<Integer>();
+			//ArrayList<Integer> arrayInteiros = new ArrayList<Integer>(50);
 			arrayInteiros.add(64); // index 0
 			arrayInteiros.add(22); // index 1
 			arrayInteiros.add(1); // index 2
@@ -36,6 +38,11 @@ public class TesteArrayList {
 			}
 			
 			System.out.println();
+			for (int i = 0; i < arrayInteiros.size(); i++) {
+			   System.out.print(arrayInteiros.get(i) + ", ");
+			}
+			
+			System.out.println();
 			System.out.println(arrayInteiros.get(1));
 			
 			arrayInteiros.remove(1); // index
@@ -47,8 +54,25 @@ public class TesteArrayList {
 			
 			System.out.println(arrayInteiros);
 			
+			arrayInteiros.set(0, 298);
 			
-			//arrayInteiros.sort(null);
+			System.out.println(arrayInteiros);
+			
+			Collections.sort(arrayInteiros);  // Sort arrayInteiros
+
+			System.out.println(arrayInteiros);
+
+			
+			System.out.println(arrayInteiros.isEmpty());
+			
+			System.out.println(arrayInteiros.contains(298));
+			
+			arrayInteiros.clear();
+			
+			System.out.println("size = "+arrayInteiros.size());
+			
+			
+			
 		}
 
 	

@@ -7,13 +7,11 @@ import java.util.Iterator;
 
 
 public class TesteArrayList {
-	
-
 		public static void main(String args[]) {
 
 			//ArrayList arrayInteiros = new ArrayList();
-			ArrayList<Integer> arrayInteiros = new ArrayList<Integer>();
-			//ArrayList<Integer> arrayInteiros = new ArrayList<Integer>(50);
+			//ArrayList<Integer> arrayInteiros = new ArrayList<Integer>();
+			ArrayList<Integer> arrayInteiros = new ArrayList<Integer>(50);
 			arrayInteiros.add(64); // index 0
 			arrayInteiros.add(22); // index 1
 			arrayInteiros.add(1); // index 2
@@ -25,16 +23,17 @@ public class TesteArrayList {
 			System.out.println("size = "+arrayInteiros.size());
 			
 			//Iterator iter1 = arrayInteiros.iterator();
-			Iterator<Integer> iterador = arrayInteiros.iterator();
-			while(iterador.hasNext()){
-			        System.out.print(iterador.next()+", ");
+			Iterator<Integer> itera = arrayInteiros.iterator();
+			while(itera.hasNext()){
+			        System.out.print(itera.next()+", ");
 			}
 			
 			System.out.println();
 			
+			
 			for (Integer i: arrayInteiros) {
-		        System.out.print(i+", ");
-				
+		        System.out.print(i+", ");	
+		        
 			}
 			
 			System.out.println();
@@ -45,7 +44,7 @@ public class TesteArrayList {
 			System.out.println();
 			System.out.println(arrayInteiros.get(1));
 			
-			arrayInteiros.remove(1); // index
+			arrayInteiros.remove(1); // index O(n), onde n=arrayInteiros.size();
 			
 			
 			System.out.println(arrayInteiros);

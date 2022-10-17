@@ -16,10 +16,16 @@ public class Excecao3 {
 			System.out.println("Erro: divisão por zero");
 		} catch(InputMismatchException e) {
 			System.out.println("Entrada inválida");
-
-		}
+		} catch (Exception e) {
+			
+		} //finally {
+			
+		//}
+		//}
 		
 		
+	
+	
 		System.out.println("Fim");
 
 		

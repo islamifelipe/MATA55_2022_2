@@ -6,7 +6,7 @@ public class Cachorro extends Animal{
 	
 	public Cachorro() {
 		// por padrão, chama o construtor padrão da superclasse 
-		//super();
+		super();
 		// E se Animal não possuir construtor padrão?
 		System.out.println("Construtor padrão de Cachorro");
 	}
@@ -28,12 +28,20 @@ public class Cachorro extends Animal{
 		System.out.println("baba");
 	}
 	
+	
+	public String toString() {
+		return "cachorro";
+	}
+	
 	public void testeCor() {
 		if (super.getCor()==Cor.AMARELO) {
-			//this.cor; // cor não é herdada
+			//this.cor = Cor.VERMLHO; // cor não é herdada
 			
 			System.out.println("Cachorro amarelo");
 		}
 	}
-
+	
+	public void mia() {
+		System.out.println("mia cachorro");
+	}
 }

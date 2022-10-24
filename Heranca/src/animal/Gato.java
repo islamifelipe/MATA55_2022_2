@@ -26,10 +26,7 @@ public class Gato extends Animal{
 		System.out.println("GATO anda "+direcao+" metros (sobrescrita)");
 	}
 	
-	//@Override
-	//public void andar(int direcao) {
-	//	System.out.println("GATO anda "+direcao+" metros (sobrecarga)");
-	//}
+	
 	
 	
 

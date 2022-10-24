@@ -1,6 +1,6 @@
 package animal;
 
-public class Animal {
+public class Animal extends Object{
 	private Cor cor; // não é visível fora da classe nem pelas classes filhas
 	//protected Cor cor; // não é visível fora da classe, mas é visível pelas classes filhas (MESMO FORA DO PACOTE).
 	
@@ -26,5 +26,10 @@ public class Animal {
 	public void anda(int direcao) {
 		System.out.println("anda "+direcao+" metros");
 	}
+	
+	public void dormir() {
+		System.out.println("Animal dormindo");
+	}
+	
 	
 }
